@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hanstedt - Bands Activity</title>
+  </head>
+  <body>
+
+    <h1>Battle of the Band Arrays</h1>
+
+    <script type="text/javascript">
+
+      // Fill in the question marks with what the output will be.
+      var bands = ["Metallica", "Social Distortion", "Disturbed", "Queen", "REM", "Bare Naked Ladies"];
+      var bandsLower = bands;
+
+      var usersFavoriteBand = prompt ("What is your favorite band?");
+
+      var count;
+      for (count = 0; count < bands.length; count++) {
+        console.log ("count is " + count);
+        bandsLower [count] = bands [count].toLowerCase ();
+      }
+      
+      if (bandsLower.indexOf (usersFavoriteBand.toLowerCase ()) > -1)
+      {
+        alert ("Yes, the band " + usersFavoriteBand + " rocks!");
+      }
+
+      else {
+        alert ("No, the band " + usersFavoriteBand + " isn't that great.");
+      }
+    </script>
+
+  </body>
+</html>
